@@ -1,0 +1,69 @@
+<!-- PART 1 -->
+<div id="part1" class="card hidden">
+  <h2>Part 1 – Initial Presentation</h2>
+
+  <div class="grid">
+    <div class="avatar">
+      <img src="avatar-patient.png" alt="Patient avatar">
+    </div>
+
+    <div>
+      <h3>History</h3>
+      <ul>
+        <li>Pain started in upper abdomen, now more diffuse</li>
+        <li>Intermittent chills, no documented fever</li>
+        <li>PSHx: Cesarean section 12 years ago</li>
+        <li>PMHx: Obesity, hyperlipidemia</li>
+        <li>Meds: None</li>
+        <li>Denies tobacco, alcohol, or drug use</li>
+      </ul>
+
+      <h3>Vitals</h3>
+      <ul>
+        <li>T 37.9°C</li>
+        <li>HR 104</li>
+        <li>BP 132/84</li>
+        <li>RR 18</li>
+        <li>SpO₂ 99% RA</li>
+      </ul>
+
+      <h3>Exam</h3>
+      <ul>
+        <li>Awake, alert, no distress</li>
+        <li>Slight scleral icterus</li>
+        <li>Mucus membranes dry</li>
+        <li>Clear breath sounds</li>
+        <li>Generalized abdominal pain, worst in RUQ/epigastrium</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Question 1: Initial diagnostic approach?</h3>
+
+  <button onclick="wrongAnswer(
+    'CT abdomen/pelvis without contrast',
+    'CT A/P without contrast is useful for nephrolithiasis but is not ideal for suspected biliary pathology. CT can miss biliary stones and does not adequately evaluate gallbladder inflammation. Try again.'
+  )">CT abdomen/pelvis without contrast</button>
+
+  <button onclick="correctAnswer(
+    'RUQ ultrasound and laboratory evaluation',
+    'Correct. RUQ ultrasound combined with laboratory evaluation is the first-line diagnostic approach for suspected biliary pathology.',
+    'part2'
+  )">RUQ ultrasound and laboratory evaluation</button>
+
+  <button onclick="wrongAnswer(
+    'Start antibiotics and admit',
+    'Treatment without diagnosis risks missing obstruction and delays definitive management. Try again.'
+  )">Start antibiotics and admit for suspected cholecystitis</button>
+
+  <button onclick="wrongAnswer(
+    'MRCP immediately',
+    'MRCP is a confirmatory test for choledocholithiasis but is not the initial diagnostic step. Try again.'
+  )">MRCP immediately</button>
+
+  <div id="feedbackBox" class="feedback hidden"></div>
+
+  <footer>
+    <button class="utility" onclick="home()">Home</button>
+  </footer>
+</div>
